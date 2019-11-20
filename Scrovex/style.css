@@ -1,0 +1,120 @@
+html, body, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #642598;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid salmon;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h4 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+h1 {
+    font-size: 80pt;
+    margin: 0;
+    margin-top: 180px;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+.slider {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.slider ol {
+    display: flex;
+}
+
+.slider ol li > a {
+    margin-left: 4px;
+    padding: 40px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: block;
+    border-top: 2px solid salmon;
+}
+
+
+.slide {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.slide h3 {
+    margin-top: 0;
+    max-width: 300px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.slide > div {
+    margin-left: 30px;
+}
+
+.indicators {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.indicators hr {
+    width: 100%;
+    margin: 0 10px 0 0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.indicators hr:last-child {
+    margin: 0;
+}
+
+.indicators hr:first-child {
+    border-color: salmon;
+}
