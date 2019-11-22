@@ -8,14 +8,19 @@ ol {
   color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 body {
   background-color: #371381;
   font-family: "PT Sans Narrow", Roboto, Arial, Helvetica, sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
 }
 
 header {
@@ -25,13 +30,23 @@ header {
   padding: 20px 35px;
 }
 
-header ul {
+.menu {
   display: flex;
 }
 
-header li {
+.menu li {
   margin-left: 50px;
   text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 button {
@@ -49,27 +64,26 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 h1,
 h4 {
-  color: #fff;
   text-align: center;
   letter-spacing: 15px;
 }
 
 h1 {
   font-size: 80pt;
-  margin: 0;
   margin-top: 180px;
 }
 
 h4 {
   text-transform: uppercase;
 }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 
 .slider {
   max-width: 1000px;
@@ -141,18 +155,12 @@ h4 {
   text-transform: uppercase;
 }
 
-.bloco-inner h3 {
-  margin: 0;
-}
-
 .bloco-inner h5 {
   font-size: 70pt;
-  margin: 0;
 }
 
 .bloco-inner p {
   opacity: 0.5;
-  margin: 0;
 }
 
 #numbers {
@@ -166,7 +174,6 @@ h4 {
 
 #numbers h2 {
   font-size: 60pt;
-  margin: 0;
   margin-bottom: 0.5em;
 }
 
@@ -196,7 +203,6 @@ h4 {
 }
 
 .video h5 {
-  margin: 0;
   display: block;
 }
 
@@ -229,16 +235,20 @@ h4 {
 
 .notice > .content h3 {
   font-size: 2.5em;
-  margin: 0;
 }
 
 .time-read {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border-top: 5px solid aqua;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+#minutos-leitura {
+  font-size: 36pt;
 }
 
 .notice-actions {
@@ -256,4 +266,47 @@ h4 {
   border-radius: 50px;
   margin-right: 15px;
   text-transform: uppercase;
+}
+
+.global-scale {
+  margin-top: 500px;
+  margin-bottom: 100px;
+}
+
+.slide-v p {
+  font-size: 2em;
+}
+
+.slide-v p::before {
+  content: '"';
+  padding-right: 15px;
+  color: yellow;
+}
+
+.slide-v p::after {
+  content: '"';
+  padding-left: 15px;
+  color: yellow;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.footer-top {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media li {
+  margin: 0 25px;
 }
